@@ -1,0 +1,5 @@
+C:\!Projects!\BlizzardOBucksMachine\WebApplicationTimesheet\ClassLibrary\bin\Release\ClassLibrary.dll
+C:\!Projects!\BlizzardOBucksMachine\WebApplicationTimesheet\ClassLibrary\bin\Release\ClassLibrary.pdb
+C:\!Projects!\BlizzardOBucksMachine\WebApplicationTimesheet\ClassLibrary\obj\Release\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\!Projects!\BlizzardOBucksMachine\WebApplicationTimesheet\ClassLibrary\obj\Release\ClassLibrary.dll
+C:\!Projects!\BlizzardOBucksMachine\WebApplicationTimesheet\ClassLibrary\obj\Release\ClassLibrary.pdb

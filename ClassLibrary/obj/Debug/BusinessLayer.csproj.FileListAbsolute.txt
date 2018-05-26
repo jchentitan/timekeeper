@@ -1,0 +1,6 @@
+C:\!Projects!\BlizzardOBucksMachine\WebApplicationTimesheet\ClassLibrary\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\!Projects!\BlizzardOBucksMachine\WebApplicationTimesheet\ClassLibrary\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\!Projects!\BlizzardOBucksMachine\WebApplicationTimesheet\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\!Projects!\BlizzardOBucksMachine\WebApplicationTimesheet\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\!Projects!\BlizzardOBucksMachine\WebApplicationTimesheet\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\!Projects!\BlizzardOBucksMachine\WebApplicationTimesheet\ClassLibrary\obj\Debug\ClassLibrary.pdb

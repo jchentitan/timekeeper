@@ -1,0 +1,108 @@
+﻿@model IEnumerable<BusinessLayer.Task>
+
+@{
+    ViewBag.Title = "Weekly";
+    Layout = "~/Views/Shared/_Weekly.cshtml";
+}
+
+<form action="/main/timesheet">
+    <section class="jcyc-body-container" style="width:800px !important">
+
+        <div class="cf jcyc-header-group">
+            <b>@DateTime.Now</b>
+        </div>
+        <div class="cf jcyc-header-group">
+            <div style="float:left; margin: 20px 0;">@Html.ActionLink("< Previous Week", "Previous", "Timesheet")</div>
+            <div style="float:right; margin: 20px 0;">@Html.ActionLink("Next Week >", "Next", "Timesheet")</div>
+        </div>
+        <div class="cf jcyc-header-group">
+            <div class="jcyc-header-label jcyc-project-title"><b>Project name</b></div>
+            <div class="jcyc-header-label"><b>Sunday</b></div>
+            <div class="jcyc-header-label"><b>Monday</b></div>
+            <div class="jcyc-header-label"><b>Tuesday</b></div>
+            <div class="jcyc-header-label"><b>Wednesday</b></div>
+            <div class="jcyc-header-label"><b>Thursday</b></div>
+            <div class="jcyc-header-label"><b>Friday</b></div>
+            <div class="jcyc-header-label"><b>Saturday</b></div>
+        </div>
+
+        @foreach (var project in Model)
+        {   
+        <div class="cf jcyc-body-group">
+            <div class="jcyc-project-line jcyc-project-title">@project.TaskName</div>
+            <div class="jcyc-project-line"><input id="Sun" class="@project.TaskName" name="Sun" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="Mon" class="@project.TaskName" name="Mon" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="Tue" class="@project.TaskName" name="Tue" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="Wed" class="@project.TaskName" name="Wed" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="Thu" class="@project.TaskName" name="Thu" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="Fri" class="@project.TaskName" name="Fri" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="Sat" class="@project.TaskName" name="Sat" type="text" value="0" /></div>
+        </div>
+        }
+
+        <hr style="border:1px solid #c1c1c1;" />
+
+        <div class="cf jcyc-body-group">
+            <div class="jcyc-project-line jcyc-project-title">R & D</div>
+            <div class="jcyc-project-line"><input id="rnd7" name="Sun" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="rnd1" name="Mon" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="rnd2" name="Tue" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="rnd3" name="Wed" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="rnd4" name="Thu" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="rnd5" name="Fri" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="rnd6" name="Sat" type="text" value="0" /></div>
+        </div>
+
+        <div class="cf jcyc-body-group">
+            <div class="jcyc-project-line jcyc-project-title">Maintenance</div>
+            <div class="jcyc-project-line"><input id="maintenance7" name="Sun" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="maintenance1" name="Mon" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="maintenance2" name="Tue" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="maintenance3" name="Wed" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="maintenance4" name="Thu" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="maintenance5" name="Fri" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="maintenance6" name="Sat" type="text" value="0" /></div>
+        </div>
+
+        <div class="cf jcyc-body-group">
+            <div class="jcyc-project-line jcyc-project-title">Sick</div>
+            <div class="jcyc-project-line"><input id="sick7 " name="Sun" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="sick1" name="Mon" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="sick2" name="Tue" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="sick3" name="Wed" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="sick4" name="Thu" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="sick5" name="Fri" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="sick6" name="Sat" type="text" value="0" /></div>
+        </div>
+
+        <div class="cf jcyc-body-group">
+            <div class="jcyc-project-line jcyc-project-title">Vacation</div>
+            <div class="jcyc-project-line"><input id="vacation7" name="Sun" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="vacation1" name="Mon" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="vacation2" name="Tue" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="vacatoin3" name="Wed" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="vacation4" name="Thu" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="vacation5" name="Fri" type="text" value="0" /></div>
+            <div class="jcyc-project-line"><input id="vacation6" name="Sat" type="text" value="0" /></div>
+        </div>
+
+        <div class="cf jcyc-footer-group">
+            <div class="jcyc-footer-label"><b>Daily total: </b></div>
+            <div class="jcyc-footer-label"><input id="totalSun" name="totalSunday" value="0" disabled="disabled" type="text" /></div>
+            <div class="jcyc-footer-label"><input id="totalMon" name="totalMonday" value="0" disabled="disabled" type="text" /></div>
+            <div class="jcyc-footer-label"><input id="totalTue" name="totalTuesday" value="0" disabled="disabled" type="text" /></div>
+            <div class="jcyc-footer-label"><input id="totalWed" name="totalWednesday" value="0" disabled="disabled" type="text" /></div>
+            <div class="jcyc-footer-label"><input id="totalThu" name="totalThursday" value="0" disabled="disabled" type="text" /></div>
+            <div class="jcyc-footer-label"><input id="totalFri" name="totalFriday" value="0" disabled="disabled" type="text" /></div>
+            <div class="jcyc-footer-label"><input id="totalSat" name="totalSaturday" value="0" disabled="disabled" type="text" /></div>
+        </div>
+    </section>
+    <section class="cf jcyc-submit-container">
+ 
+        <div class="jcyc-submit-line">
+            <p>@Html.ActionLink("Save current hours", "SaveData", "Timesheet")</p>
+            <p>@Html.ActionLink("Save and commit hours", "SaveData", "Timesheet")</p>
+        </div>
+    </section>
+    
+</form>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]> <html lang="en" class="no-js ie6" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="no-js ie8" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="no-js ie9" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]>  <html lang="en" class="no-js"> <![endif]-->
+<head>
+<title>
+</title>
+<link href="global.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="modernizr.js"></script>
+</head>
+<body>
+	<section class="jcyc-header-container"></section>
+        <section class="cf jcyc-manage-container">
+            <div class="jcyc-upadate-project"></div>
+            <div class="jcyc-create-project"></div>
+            <div class="jcyc-view-project"></div>
+            <div class="jcyc-delete-project"></div>
+        </section>
+        <form action="/main/timesheet">
+	<section class="jcyc-body-container" style="width:800px !important">
+                
+		<div class="cf jcyc-header-group">
+			<div class="jcyc-header-label jcyc-project-title"><b>Project name</b></div>
+			<div class="jcyc-header-label"><b>Sunday</b></div>
+			<div class="jcyc-header-label"><b>Monday</b></div>
+			<div class="jcyc-header-label"><b>Tuesday</b></div>
+			<div class="jcyc-header-label"><b>Wednesday</b></div>
+			<div class="jcyc-header-label"><b>Thursday</b></div>
+			<div class="jcyc-header-label"><b>Friday</b></div>
+			<div class="jcyc-header-label"><b>Saturday</b></div>
+		</div>
+		
+            
+		<div class="cf jcyc-body-group">
+			<div class="jcyc-project-line jcyc-project-title">project title</div>
+			<div class="jcyc-project-line"><input id="sun1" name="Sun" type="text" value="0" /></div>
+			<div class="jcyc-project-line"><input id="mon1" name="Mon" type="text" value="0" /></div>
+			<div class="jcyc-project-line"><input id="tue1" name="Tue" type="text" value="0" /></div>
+			<div class="jcyc-project-line"><input id="wed1" name="Wed" type="text" value="0" /></div>
+			<div class="jcyc-project-line"><input id="thu1" name="Thu" type="text" value="0" /></div>
+			<div class="jcyc-project-line"><input id="fri1" name="Fri" type="text" value="0" /></div>
+			<div class="jcyc-project-line"><input id="sat1" name="Sat" type="text" value="0" /></div>
+		</div>	
+            
+                <div class="cf jcyc-body-group">
+			<div class="jcyc-project-line jcyc-project-title">project title</div>
+			<div class="jcyc-project-line"><input id="sun2" name="Sun" type="text" value="0" /></div>
+			<div class="jcyc-project-line"><input id="mon2" name="Mon" type="text" value="0" /></div>
+			<div class="jcyc-project-line"><input id="tue2" name="Tue" type="text" value="0" /></div>
+			<div class="jcyc-project-line"><input id="wed2" name="Wed" type="text" value="0" /></div>
+			<div class="jcyc-project-line"><input id="thu2" name="Thu" type="text" value="0" /></div>
+			<div class="jcyc-project-line"><input id="fri2" name="Fri" type="text" value="0" /></div>
+			<div class="jcyc-project-line"><input id="sat2" name="Sat" type="text" value="0" /></div>
+		</div>	
+            
+		<div class="cf jcyc-footer-group">
+			<div class="jcyc-footer-label"><b>Daily total: </b></div>
+			<div class="jcyc-footer-label"><input id="totalSun" name="totalSunday" value="0" disabled="true" type="text" /></div>
+			<div class="jcyc-footer-label"><input id="totalMon" name="totalMonday" value="0" disabled="true" type="text" /></div>
+			<div class="jcyc-footer-label"><input id="totalTue" name="totalTuesday" value="0" disabled="true" type="text" /></div>
+			<div class="jcyc-footer-label"><input id="totalWed" name="totalWednesday" value="0" disabled="true" type="text" /></div>
+			<div class="jcyc-footer-label"><input id="totalThu" name="totalThursday" value="0" disabled="true" type="text" /></div>
+			<div class="jcyc-footer-label"><input id="totalFri" name="totalFriday" value="0" disabled="true" type="text" /></div>
+			<div class="jcyc-footer-label"><input id="totalSat" name="totalSaturday" value="0" disabled="true" type="text" /></div>
+                </div>	
+	</section>
+	<section class="cf jcyc-submit-container">
+		<div class="jcyc-submit-line"><input type="submit" value="Submit hours" /></div>
+	</section>
+	</form>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script type="text/javascript" language="javascript" src="global.js"></script>
+</body>
+</html>
+
